@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- Themes from https://themeroller.jquerymobile.com/ -->
+<link rel="style<sheet" href="themes/cityview.css" />
+<link rel="stylesheet" href="themes/cityview.min.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<meta http-equiv="utf-8" />
+<!--Title of the project-->
+<title>City View</title>
+</head>
+
+<script type="text/javascript">
+function empty()
+{
+	window.alert("Section under development, sorry for inconvenience.");
+}
+</script>
+
+<body>
+<section id="page6" data-role="page" data-theme="d"> 
+  <!-- Page header -->
+  <div data-role="header" class="ui-header-fullscreen"> <font size="+6">
+    <center>
+      City View
+    </center>
+    </font> </div>
+  <!-- back button to get back to first page --> 
+  <a href="home.html">Back</a> <font size="+6">
+  <center>
+    <b>Cities</b>
+  </center>
+  <font size="-2"><p align="right"><font color="#FF0000">*</font>  the pages are under development</p></font>
+  </font> <br>
+  <div data-role="content" class="ui-body-d">
+  <table class="ui-table">
+  <tr> 
+  <td class="ui-focus"><a href="melbourne.html"><center><img src="images/melbourne.png" alt="Melbourne" height="135" width="240" /> <p>Melbourne</p></center></a></td>
+  <td class="ui-focus"><a href="sydney.html" onclick="empty()"><center><img src="images/sydney.png" alt="Sydney" height="135" width="240" /> <p>Sydney<font color="#FF0000">*</font></p></center></a></td>
+  </tr>
+  <tr>
+  <td class="ui-focus"><a href="brisbane.html" onclick="empty()"><center><img src="images/brisbane.png" alt="Brisbane" height="135" width="240" /> <p>Brisbane<font color="#FF0000">*</font></p></center></a></td>
+  <td class="ui-focus"><a href="adelaide.html" onclick="empty()"><center><img src="images/adelaide.png" alt="Adelaide" height="135" width="240" /> <p>Adelaide<font color="#FF0000">*</font></p></center></a></td>
+  </tr>
+  </table>
+  </div>
+   <!-- Footer Statement -->
+  <div data-role="footer" class="ui-footer-fullscreen"> &copy;Deakin University, School of Information Technology. This web page has been developed as a student assignment for the unit SIT313: Mobile Computing. Therefore it is not part of the University's authorised web site. </div>      
+</section>
+</body>
+</html>

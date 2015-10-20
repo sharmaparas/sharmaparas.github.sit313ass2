@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- Themes from https://themeroller.jquerymobile.com/ -->
+<link rel="style<sheet" href="themes/cityview.css" />
+<link rel="stylesheet" href="themes/cityview.min.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<meta http-equiv="utf-8" />
+<!--Title of the project-->
+<title>City View</title>
+</head>
+<script type="text/javascript">
+function formcheck()
+{
+	var name=document.getElementById("name").value;
+	if (name==null || name=="") {
+        alert("No name filled");
+        return false;
+    }
+	
+	var email = document.getElementById("email").value;
+    var atpos = email.indexOf("@");
+    var dotpos = email.lastIndexOf(".");
+    if (atpos<1 || dotpos<atpos+2 || dotpos+2>=email.length) {
+        alert("Not a valid e-mail address");
+        return false;
+	}
+	
+	var comment=document.getElementById("comment").value;
+	if (comment==null || comment=="") {
+        alert("Please provide your comments");
+        return false;
+    }
+	return true;
+} 
+</script>
+<body>
+<section id="page6" data-role="page" data-theme="d"> 
+  <!-- Page header -->
+  <div data-role="header" class="ui-header-fullscreen"> <font size="+6">
+    <center>
+      City View
+    </center>
+    </font> </div>
+  <!-- back button to get back to first page --> 
+  <a href="home.html">Back</a> <font size="+6">
+  <center>
+    <b>Feedback</b>
+  </center>
+  </font> <br>
+  <div data-role="content">
+    <form id="feedback" class="ui-bar-d" onsubmit="formcheck()">
+      <label>Name:
+        <input type="text" id="name">
+      </label>
+      <label>Email ID:
+        <input type="text" id="email">
+      </label>
+      <label>Feedback:
+        <textarea rows="4" cols="50" id="feedback"></textarea>
+      </label>
+      <input class="ui-btn-d" type="submit" value="Submit">
+    </form>
+  </div>
+  <!-- footer statement -->
+  <div data-role="footer" class="ui-footer-fullscreen"> &copy;Deakin University, School of Information Technology. This web page has been developed as a student assignment for the unit SIT313: Mobile Computing. Therefore it is not part of the University's authorised web site. </div>
+</section>
+</body>
+</html>
